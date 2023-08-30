@@ -38,5 +38,12 @@ export const useInputParams = () => {
         return;
     }
   };
-  return { name, number, handleSubmit, handleChange, isLoading };
+
+  return {
+    name,
+    number,
+    handleSubmit,
+    handleChange,
+    isLoading,
+  };
 };
