@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { toast } from "react-hot-toast";
-import { useAddContactMutation, useGetContactsQuery } from "services/api";
+import { useAddContactMutation, useGetContactsQuery } from "redux/api";
 
 export const useInputParams = () => {
   const [name, setName] = useState("");

@@ -1,5 +1,4 @@
 import React from "react";
-import { Field, ErrorMessage } from "formik";
 import css from "./inputPhoneBook.module.css";
 import { useInputParams } from "hooks/useInputParams";
 
@@ -17,7 +16,7 @@ export default function InputPhoneBook() {
       <form type="submit" onSubmit={handleSubmit} className={css.formContainer}>
         <label className={css.labelStyle}>
           Name
-          <Field
+          <input
             type="text"
             name="name"
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -29,7 +28,7 @@ export default function InputPhoneBook() {
         </label>
         <label className={css.labelStyle}>
           Number
-          <Field
+          <input
             type="tel"
             name="number"
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
@@ -47,7 +46,6 @@ export default function InputPhoneBook() {
         >
           Add contact
         </button>
-        <ErrorMessage name="name" component="div" />
       </form>
     </div>
   );

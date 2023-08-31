@@ -1,4 +1,4 @@
-import { useDeleteContactsMutation, useGetContactsQuery } from "services/api";
+import { useDeleteContactsMutation, useGetContactsQuery } from "redux/api";
 import { useFilterParams } from "./useFilterParams";
 
 export const useContactsParams = () => {

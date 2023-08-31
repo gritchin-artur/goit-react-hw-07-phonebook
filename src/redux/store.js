@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { filterSlice } from "./filterSlice";
-import { contactsApi } from "services/api";
+import { contactsApi } from "redux/api";
 import { setupListeners } from "@reduxjs/toolkit/dist/query";
 
 export const store = configureStore({

@@ -1,13 +1,12 @@
 import InputPhoneBook from "./inputPhoneBook/inputPhoneBook";
 import ContactsList from "./contactsList/contactsList";
 import FindContact from "./findContact/findContact";
-import { Formik } from "formik";
 import { Toaster } from "react-hot-toast";
 import css from "./app.module.css";
 
 export function App() {
   return (
-    <Formik>
+    <>
       <div className={css.appContainer}>
         <h1>Phonebook</h1>
         <InputPhoneBook />
@@ -16,6 +15,6 @@ export function App() {
         <ContactsList />
         <Toaster />
       </div>
-    </Formik>
+    </>
   );
 }
